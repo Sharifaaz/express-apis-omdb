@@ -17,6 +17,7 @@ app.use(require('morgan')('dev'));
 
 // Routes
 app.get('/', function(req, res) {
+  console.log(process.env.OMDB_API_KEY)
   res.send('Hello, backend!');
 });
 
